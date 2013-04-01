@@ -19,3 +19,9 @@ $(document).ready(function(){
     $('#BefResult').text(boo);
   });
 });
+
+$(document).ready(function(){
+  $('#AftBtn').click(function(){
+    $('#AftResult').text(gon.boo);
+  });
+});

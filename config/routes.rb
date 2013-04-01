@@ -1,5 +1,6 @@
 X::Application.routes.draw do
   match 'tops/bef'
+  match 'tops/aft'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
