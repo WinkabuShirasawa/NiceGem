@@ -5,6 +5,10 @@ class TopsController < ApplicationController
     set_user
   end
 
+  def aft
+    set_user
+  end
+
   private
 
   def set_user
