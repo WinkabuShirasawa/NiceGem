@@ -3,7 +3,6 @@ class User < ActiveRecord::Base
 
   class << self
 
-    # 
     def single_insert(insert_count)
       insert_count.times do |c|
         User.create(:name => 'boo')
@@ -18,6 +17,15 @@ class User < ActiveRecord::Base
     def each_bulk_insert(bulk, commit_count)
       bulk.in_groups_of(commit_count, false).each do |g|
         User.import g
+      end
+    end
+
+    # each_bulk_insertのトランザクションver
+    def each_bulk_insert_with_transaction(bulk, commit_count)
+      User.transaction do
+        bulk.in_groups_of(commit_count, false).each do |g|
+          User.import g
+        end
       end
     end
 
@@ -47,10 +55,13 @@ end
 #  rep.report("single"){ User.single_insert(count_all); User.delete_all }
 #
 #  # 27 sec
-#  rep.report("bulk  "){ User.bulk_insert(bulk); User.delete_all }
+#  rep.report("bulk"){ User.bulk_insert(bulk); User.delete_all }
 #
 #  # 27 sec
 #  rep.report("bulk each"){ User.each_bulk_insert(bulk, 10000); User.delete_all }
+#
+#  # 26 sec
+#  rep.report("w/transaction"){ User.each_bulk_insert_with_transaction(bulk, 10000); User.delete_all }
 #
 #  # 29 sec
 #  rep.report("bulk each by commit"){ User.each_bulk_insert_by_commit(count_all, 10000); User.delete_all }
