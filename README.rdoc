@@ -1,8 +1,8 @@
 == Nice Gem!!
 
-・gon (JavaScriptツール)
-・activerecord-import (Bulk insert)
-・settingslogic (定数値などを管理する)
-・activeDecorator (表示に関するツール)
+1. JavaScriptツール[gon](https://github.com/gazay/gon)
+2. Bulk insertできる activerecord-import(https://github.com/zdennis/activerecord-import)
+3. 定数値などを管理する settingslogic(https://github.com/binarylogic/settingslogic)
+4. 表示に関する処理を扱う activeDecorator(https://github.com/amatsuda/active_decorator)  
   http://dodemoyoiblog.blogspot.jp/2012/10/model-decorator.html
   http://morizyun.github.com/blog/draper-ruby-gem-code-clear/
