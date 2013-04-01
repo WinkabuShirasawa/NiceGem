@@ -1,0 +1,9 @@
+<p>Postタイトル ： <%=@post.title%></p>
+<p>Post本文 ： <%=@post.body%></p>
+<hr>
+
+<%@post.comments.each do |c|%>
+<p><%#=c.body_with_time%><%# error!! (undefined method) %></p>
+<%end%>
+
+<%=render @post.comments%>
