@@ -1,0 +1,7 @@
+terms:
+  - { id: 1, name: 3m,  label: 3ヶ月 }
+  - { id: 2, name: 6m,  label: 6ヶ月 }
+  - { id: 3, name: 1y,  label:   1年 }
+  - { id: 4, name: 3y,  label:   3年 }
+  - { id: 5, name: 6y,  label:   5年 }
+  - { id: 6, name: 10y, label:  10年 }
