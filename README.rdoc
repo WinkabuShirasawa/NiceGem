@@ -1,8 +1,16 @@
 == Nice Gem!!
 
-1. JavaScriptツール[gon](https://github.com/gazay/gon)
-2. Bulk insertできる activerecord-import(https://github.com/zdennis/activerecord-import)
-3. 定数値などを管理する settingslogic(https://github.com/binarylogic/settingslogic)
-4. 表示に関する処理を扱う activeDecorator(https://github.com/amatsuda/active_decorator)  
-  http://dodemoyoiblog.blogspot.jp/2012/10/model-decorator.html
-  http://morizyun.github.com/blog/draper-ruby-gem-code-clear/
+=== 1. JavaScriptツール[gon](https://github.com/gazay/gon)
+いままで手間だと思っていたRailsからJavaScriptへのデータ受け渡しが簡単になった
+
+=== 2. Bulk insertできる activerecord-import(https://github.com/zdennis/activerecord-import)
+大量にレコードを投入するのにパフォーマンスが良くなった
+
+=== 3. 定数値などを管理する settingslogic(https://github.com/binarylogic/settingslogic)
+導入すること規約に沿うことになるのでコードに統一感をもたせることができる
+
+=== 4. 表示に関する処理を扱う activeDecorator(https://github.com/amatsuda/active_decorator)  
+
+
+- [参考1] http://dodemoyoiblog.blogspot.jp/2012/10/model-decorator.html
+- [参考2] http://morizyun.github.com/blog/draper-ruby-gem-code-clear/
