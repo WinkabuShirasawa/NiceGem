@@ -7,7 +7,7 @@
 大量にレコードを投入するのにパフォーマンスが良くなった
 
 === 3. 定数値などを管理する settingslogic(https://github.com/binarylogic/settingslogic)
-導入すること規約に沿うことになるのでコードに統一感をもたせることができる
+コードに統一感をもたせることができる。導入しない場合、あちこちでオレオレルールが混在する可能性大。
 
 === 4. 表示に関する処理を扱う activeDecorator(https://github.com/amatsuda/active_decorator)  
 
